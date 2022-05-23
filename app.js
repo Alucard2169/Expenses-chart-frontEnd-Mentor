@@ -1,4 +1,5 @@
 const days = document.querySelectorAll('.ch');
+const dayName = document.querySelectorAll('.day')
 const total = document.getElementById('sp');
 
 // total sum
@@ -26,6 +27,7 @@ const data = async () => {
         sum += Data[i].amount;
         days[i].style.height = `${Data[i].amount}%`
         days[i].setAttribute('value', `$${Data[i].amount}`);
+        dayName[i].textContent = Data[i].day
     }
     total.textContent = sum;
 }
