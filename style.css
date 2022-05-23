@@ -71,7 +71,7 @@ main .upper{
 }
 
 .content .chart div::after{
-    content: attr(value);
+    content: attr(data-value);
     background-color: black;
     color: white;
     margin: auto;

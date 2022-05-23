@@ -26,7 +26,7 @@ const data = async () => {
     for (let i = 0; i < Data.length; i++){
         sum += Data[i].amount;
         days[i].style.height = `${Data[i].amount}%`
-        days[i].setAttribute('value', `$${Data[i].amount}`);
+        days[i].setAttribute('data-value', `$${Data[i].amount}`);
         dayName[i].textContent = Data[i].day
     }
     total.textContent = sum;
